@@ -1,0 +1,94 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.icon {
+	width: 1em; height: 1em;
+  vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+}
+.iconWrap{
+	position: fixed;
+	top: 20px;
+	left: 20px;
+}
+.icon {
+		padding: 7px;
+		transform: scale(1.4);
+		transition: all 0.3s;
+}
+
+#canvas{
+	background: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+.brush{
+	left: 90px;
+}
+
+.eraser.active, .brush.active{
+	transform: scale(1.8);
+	color: brown;
+}
+
+ol.colors{
+	position: fixed;
+	top: 50px;
+	left: 20px;
+}
+ol.colors > li{
+	transition: all 0.3s;	
+}
+
+ol > li {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background: black;
+	margin: 14px 0;
+	padding: 5px;
+	box-shadow: 2px 2px 1px rgba(0,0,0,0.3);
+}
+
+li.brown {
+	background: brown;
+}
+li.orange{
+	background: orange;
+}
+
+.colors > li.active{
+	transform: scale(1.3);
+}
+
+ul.lineWidth{
+	position: fixed;
+	top: 20px;
+	right: 10px;
+}
+
+ul.lineWidth > li{
+	margin: 15px 0;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+	transition: all 0.3s;
+}
+li.thick{
+	border: 7px solid black;
+	width: 20px;
+}
+li.medium{
+	border: 4px solid black;
+}
+li.thin{
+	border: 2px solid black;
+}
+
+ul.lineWidth > li.active{
+	transform: scale(1.3);
+}

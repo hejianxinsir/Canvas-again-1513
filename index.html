@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, 
+		initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>再做画板</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<script src="//at.alicdn.com/t/font_1546966_394fpxnurul.js"></script>
+</head>
+<body>
+	<canvas id="canvas" width=300 height=300></canvas>	
+	<div class="iconWrap">
+	<svg id="brush" class="icon brush active">
+	    <use xlink:href="#icon-pen"></use>
+	</svg>
+	<svg id="eraser" class="icon eraser">
+	    <use xlink:href="#icon-eraser"></use>
+	</svg>
+	<svg id="clear" class="icon">
+	    <use xlink:href="#icon-clear"></use>
+	</svg>
+	
+	<svg id="download" class="icon download">
+	    <use xlink:href="#icon-downloadfromthecloud"></use>
+	</svg>
+	</div>
+
+	<ol id="colors" class="colors">
+		<li id="black" class="black active"></black>
+		<li id="brown" class="brown"></brown>
+		<li id="orange" class="orange"></li>
+	</ol>
+	
+	<ul id="lineWidth" class="lineWidth">
+		<li id="thick" class="thick"></li>
+		<li id="medium" class="medium"></li>
+		<li id="thin" class="thin active"></li>
+	</ul>
+	<script src="./js/main.js"></script>
+</body>
+</html>
